@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Version" content="v4.5.0" />
+
+    <!-- Css -->
+    <link href="assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.css" class="theme-opt" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="assets/css/style.css" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="page-wrapper toggled">
+        <nav id="sidebar" class="sidebar-wrapper sidebar-dark">
+            <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
+                <div class="sidebar-brand">
+                    <a href="index.html">
+                        <span class="sidebar-colored">
+                            <h4 class="mb-1">Esig GROUP</h5>
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="sidebar-menu">
+                    <li><a href="index.html"><i class="ti ti-home me-2"></i>Dashboard</a></li>
+                    <li><a href="tarefas.html"><i class="ti ti-file-invoice me-2"></i>Tarefas</a></li>
+                </ul>
+            </div>
+            <ul class="sidebar-footer list-unstyled mb-0">
+                <li class="list-inline-item mb-0">
+                </li>
+            </ul>
+        </nav>
+        <main class="page-content bg-light">
+            <div class="top-header">
+                <div class="header-bar d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="logo-icon me-3">
+                            <img src="" height="30" class="small" alt="">
+                            <span class="big">
+                                <img src="" height="24" alt="">
+                                <img src="" height="24" alt="">
+                            </span>
+                        </a>
+                        <a id="close-sidebar" class="btn btn-icon btn-soft-light" href="javascript:void(0)">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                        <div class="search-bar p-0 d-none d-md-block ms-2">
+                            <div id="search" class="menu-search mb-0">
+                                <form role="search" method="get" id="searchform" class="searchform">
+                                    <div>
+                                        <input type="text" class="form-control border rounded" name="s" id="s">
+                                        <input type="submit" id="searchsubmit" value="Search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="list-unstyled mb-0">
+                        <li class="list-inline-item mb-0">
+                            <div class="btn btn-icon btn-soft-light"><i class="ti ti-settings"></i></div>
+                        </li>
+
+                        <li class="list-inline-item mb-0 ms-1">
+                            <div class="dropdown dropdown-primary">
+                                <button type="button" class="btn btn-soft-light dropdown-toggle p-0"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                        src="assets/images/user/10.jpg" class="avatar avatar-ex-small rounded"
+                                        alt=""></button>
+                                <div class="dropdown-menu dd-menu dropdown-menu-end shadow border-0 mt-3 py-3"
+                                    style="min-width: 200px;">
+                                    <a class="dropdown-item d-flex align-items-center text-dark pb-3"
+                                        href="">
+                                        <img src="assets/images/user/10.jpg"
+                                            class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                        <div class="flex-1 ms-2">
+                                            <span class="d-block">Fábio</span>
+                                            <small class="text-muted">Dev. Front End</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-dark" href="index.html"><span
+                                            class="mb-0 d-inline-block me-1"><i class="ti ti-home"></i></span>
+                                        Dashboard</a>
+                                    <a class="dropdown-item text-dark" href=""><span class="mb-0 d-inline-block me-1"><i
+                                                class="ti ti-settings"></i></span> Perfil</a>
+                                    <div class="dropdown-divider border-top"></div>
+                                    <a class="dropdown-item text-dark" href=""><span
+                                            class="mb-0 d-inline-block me-1"><i class="ti ti-logout"></i></span>
+                                        Sair</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="layout-specing">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h5 class="mb-0">Olá Fábio,</h5>
+                            <h6 class="text-muted mb-1">Bem-vindo ao seu gestor de tarefas!</h6>
+
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#compose-mail">
+                            <i class="uil uil-plus me-1"></i> Nova Tarefa
+                        </a>
+                    </div>
+
+                    <div class="row row-cols-xl-5 row-cols-md-2 row-cols-1">
+                        <div class="col mt-4">
+                            <a href="#!"
+                                class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon text-center rounded-pill">
+                                        <i class="fas fa-tasks fs-4 mb-0"></i>
+                                    </div>
+                                    <div class="flex-1 ms-3">
+                                        <h6 class="mb-0 text-muted">To do</h6>
+                                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                data-target="4">0</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col mt-4">
+                            <a href="#!"
+                                class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon text-center rounded-pill">
+                                        <i class="fas fa-spinner fs-4 mb-0"></i>
+                                    </div>
+                                    <div class="flex-1 ms-3">
+                                        <h6 class="mb-0 text-muted">Doing</h6>
+                                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                data-target="2">0</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col mt-4">
+                            <a href="#!"
+                                class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon text-center rounded-pill">
+                                        <i class="fas fa-check-circle fs-4 mb-0"></i>
+                                    </div>
+                                    <div class="flex-1 ms-3">
+                                        <h6 class="mb-0 text-muted">Done</h6>
+                                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                data-target="64">0</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <div class="card shadow border-0 p-4 pb-0 rounded">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 fw-bold"># Tarefas concluídas por dia</h6>
+
+                                    <div class="mb-0 position-relative">
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dateRangeButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-calendar-alt"></i> Últimos 15 dias
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dateRangeButton">
+                                                <li><a class="dropdown-item" href="#">Últimos 7 dias</a></li>
+                                                <li><a class="dropdown-item" href="#">Últimos 30 dias</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dashboard" class="apex-chart"></div>
+
+                                <!-- Criar Tarefa Modal -->
+                                <div class="modal fade" id="compose-mail" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="criarTarefaLabel">Criar Tarefa</h5>
+                                                <button type="button" class="btn btn-icon" data-bs-dismiss="modal"
+                                                    aria-label="Close"><i
+                                                        class="uil uil-times fs-4 text-dark"></i></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Título da Tarefa" value="Adjust concentr">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <textarea class="form-control"
+                                                            placeholder="Detalhes da Tarefa"></textarea>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="input-group me-2 flex-grow-1">
+                                                            <span class="input-group-text"><i
+                                                                    class="uil uil-calendar-alt"></i></span>
+                                                            <input type="date" class="form-control"
+                                                                placeholder="Deadline">
+                                                        </div>
+                                                        <select class="form-select flex-grow-1">
+                                                            <option selected>Prioridade</option>
+                                                            <option value="1">Alta</option>
+                                                            <option value="2">Média</option>
+                                                            <option value="3">Baixa</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i
+                                                                    class="uil uil-search"></i></span>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Responsáveis">
+                                                        </div>
+                                                    </div>
+                                                    <div class="attach-file">
+                                                        <i class="uil uil-upload fs-3"></i>
+                                                        <p>Anexar arquivo</p>
+                                                        <small>A better way to tell which species are vulnerable</small>
+                                                    </div>
+
+                                                    <div class="col-12 mt-4">
+                                                        <button type="submit" class="btn btn-primary">Cadastrar
+                                                            Tarefa</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Criar Tarefa Modal -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/grafico.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
