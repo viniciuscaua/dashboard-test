@@ -113,7 +113,7 @@
                             <h5 class="mb-0">Tarefas</h5>
                             <h6 class="text-muted mb-1">Dashboard > Tarefas</h6>
                         </div>
-                        <a href="javascript:void(0)" class="btn btn-primary mt-2 mt-sm-0" data-bs-toggle="modal"
+                        <a href="javascript:void(0)" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#compose-mail">
                             <i class="uil uil-plus me-1"></i> Nova Tarefa
                         </a>
@@ -220,13 +220,68 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Criar Tarefa Modal -->
+                    <div class="modal fade" id="compose-mail" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="criarTarefaLabel">Criar Tarefa</h5>
+                                    <button type="button" class="btn btn-icon" data-bs-dismiss="modal"
+                                        aria-label="Close"><i class="uil uil-times fs-4 text-dark"></i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Título da Tarefa"
+                                                value="Adjust concentr">
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control" placeholder="Detalhes da Tarefa"></textarea>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="input-group me-2 flex-grow-1">
+                                                <span class="input-group-text"><i
+                                                        class="uil uil-calendar-alt"></i></span>
+                                                <input type="date" class="form-control" placeholder="Deadline">
+                                            </div>
+                                            <select class="form-select flex-grow-1">
+                                                <option selected>Prioridade</option>
+                                                <option value="1">Alta</option>
+                                                <option value="2">Média</option>
+                                                <option value="3">Baixa</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="uil uil-search"></i></span>
+                                                <input type="text" class="form-control" placeholder="Responsáveis">
+                                            </div>
+                                        </div>
+                                        <div class="attach-file">
+                                            <i class="uil uil-upload fs-3"></i>
+                                            <p>Anexar arquivo</p>
+                                            <small>A better way to tell which species are vulnerable</small>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <button type="submit" class="btn btn-primary">Cadastrar
+                                                Tarefa</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Criar Tarefa Modal -->
         </main>
     </div>
 
     <!-- javascript -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/grafico.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
